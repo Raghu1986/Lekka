@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Lekka.Models;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +26,9 @@ namespace Lekka
         public MainPage()
         {
             this.InitializeComponent();
+
+            Txt2.Text= Crypto.Encrypt(Txt1.Text.ToString());
+            Txt3.Text = Crypto.Decrypt(Txt2.Text.ToString());
         }
     }
 }

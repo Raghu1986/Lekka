@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Test project" />
+        <StackPanel>
+            
+            <TextBlock Name="Txt1" Text="Raghu project" />
+            <TextBlock Name="Txt2" />
+            <TextBlock Name="Txt3" />
+            
+        </StackPanel>
+        
     </Grid>
 </Page>
